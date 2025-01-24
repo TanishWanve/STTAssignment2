@@ -1,0 +1,20 @@
+    1  history
+    2  sudo apt list | grep -i python3.10
+    3  apt-cache policy python3.10
+    4  wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+    5  tar -xzf Python-3.10.0.tgz
+    6  cd Python-3.10.0
+    7  sudoa apt-get update
+    8  sudo apt-get update
+    9  sudo apt-get install build-essential zlib1g-dev libssl-dev libreadline-dev libsqlite3-dev libbz2-dev libffi-dev liblzma-dev libgdbm-dev libncurses5-dev libncursesw5-dev
+   10  ./configure
+   11  make
+   12  sudo make install
+   13  python3.10 --version
+   14  python3.10 -m ensurepip
+   15  python3.10 -m pip install --upgrade pip
+   16  python3.10 -m venv label_studio_env
+   17  source label_studio_env/bin/activate
+   18  pip install label-studio
+   19  label-studio &
+   20  history > user_history.txt
